@@ -1,13 +1,32 @@
 <?php
 /**
  * Plugin Name: Wordpress Bangla Pack
- * Plugin URI: http://lab.ugcoder.com/wpbangla/
+ * Plugin URI: https://github.com/thirdsailor/Wordpress-Bangla-Pack/
  * Description: Wordpress Bangla Pack is a simple, smart & easy plugin by which you can localize your Wordpress site in Bangla.
  * Version: 1.0
- * Author: Ungratified Coder
- * Author URI: http://ugcoder.com/
+ * Author: Third Sailor
+ * Author URI: www.thirdsailor.com/
  * License: GNU (General Public License) Version 3.0
  */
+
+ //To Update the Plugin 
+if (is_admin()) { // note the use of is_admin() to double check that this is happening in the admin
+    $config = array(
+        'slug' => plugin_basename(__FILE__), // this is the slug of your plugin
+        'proper_folder_name' => 'Wordpress Bangla Pack', // this is the name of the folder your plugin lives in
+        'api_url' => 'https://api.github.com/repos/thirdsailor/Wordpress-Bangla-Pack', // the github API url of your github repo
+        'raw_url' => 'https://raw.github.com/thirdsailor/Wordpress-Bangla-Pack/master', // the github raw url of your github repo
+        'github_url' => 'https://github.com/thirdsailor/Wordpress-Bangla-Pack', // the github url of your github repo
+        'zip_url' => 'https://github.com/thirdsailor/Wordpress-Bangla-Pack/zipball/master', // the zip url of the github repo
+        'sslverify' => true // wether WP should check the validity of the SSL cert when getting an update, see https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/issues/2 and https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/issues/4 for details
+        'requires' => '2.2', // which version of WordPress does your plugin require?
+        'tested' => '4.1.1', // which version of WordPress is your plugin tested up to?
+        'readme' => 'README.MD' // which file to use as the readme for the version number
+    );
+    new WPGitHubUpdater($config);
+}
+
+//Main Plugin Codes
 
 	function bn_lang_pack($domain='default') {	
 		$path=plugin_dir_path(__FILE__);
