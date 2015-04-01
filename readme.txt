@@ -1,3 +1,5 @@
+~Current Version:1.4~
+
 === Wordpress Bangla Pack ===
 Contributor: Third Sailor
 Tags: wordpress bangla tranlator, localized wordpress in bangla, bangla wordpress, wpbangla, bangla plugin
