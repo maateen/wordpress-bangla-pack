@@ -37,9 +37,26 @@
  add_filter( 'wp_list_categories', 'english_to_bengali' );
  
  //To Update the plugin from github
-	require_once( 'updater.php' );
-	if ( is_admin() ) {
-		new updater( __FILE__, 'thirdsailor', "Wordpress-Bangla-Pack" );
+add_action( 'init', 'github_plugin_updater_test_init' );
+function github_plugin_updater_test_init() {
+	include_once 'updater.php';
+	define( 'WP_GITHUB_FORCE_UPDATE', true );
+	if ( is_admin() ) { // note the use of is_admin() to double check that this is happening in the admin
+		$config = array(
+			'slug' => plugin_basename( __FILE__ ),
+			'proper_folder_name' => 'wp-bangla-pack',
+			'api_url' => 'https://api.github.com/repos/thirdsailor/Wordpress-Bangla-Pack',
+			'raw_url' => 'https://raw.github.com/thirdsailor/Wordpress-Bangla-Pack/master',
+			'github_url' => 'https://github.com/thirdsailor/Wordpress-Bangla-Pack',
+			'zip_url' => 'https://github.com/thirdsailor/Wordpress-Bangla-Pack/archive/master.zip',
+			'sslverify' => true,
+			'requires' => '2.2',
+			'tested' => '4.1',
+			'readme' => 'README.md',
+			'access_token' => '',
+		);
+		new WP_GitHub_Updater( $config );
 	}
+}
 //End Updater
 ?>
