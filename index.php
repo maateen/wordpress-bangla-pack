@@ -3,9 +3,9 @@
  * Plugin Name: Wordpress Bangla Pack
  * Plugin URI: https://github.com/thirdsailor/Wordpress-Bangla-Pack/
  * Description: Wordpress Bangla Pack is a simple, smart & easy plugin by which you can localize your Wordpress site in Bangla.
- * Version: 1.0
+ * Version: 1.1
  * Author: Third Sailor
- * Author URI: www.thirdsailor.com/
+ * Author URI: http://www.thirdsailor.com/
  * License: GNU (General Public License) Version 3.0
  */
 
