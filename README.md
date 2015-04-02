@@ -1,4 +1,4 @@
-<center><h1>~Current Version:1.1~</h1></center>
+<h1>~Current Version:1.1~</h1>
 <br />
 <h2>=== Wordpress Bangla Pack ===</h2>
 <br />
