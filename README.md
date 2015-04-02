@@ -2,7 +2,7 @@
 <br />
 <h2>=== Wordpress Bangla Pack ===</h2>
 <br />
-Contributor: Third Sailor<br />
+Contributor: @thirdsailor<br />
 Tags: wordpress bangla tranlator, localized wordpress in bangla, bangla wordpress, wpbangla, bangla plugin<br />
 Requires at least: 2.2<br />
 Tested up to: 4.1.1<br />
