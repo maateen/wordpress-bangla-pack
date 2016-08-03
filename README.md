@@ -1,8 +1,8 @@
-<h1>~Current Version:1.1~</h1>
+<h1>~Current Version:1.2~</h1>
 <br />
 <h2>=== Wordpress Bangla Pack ===</h2>
 <br />
-Contributor: [Maksudur Rahman Maateen](http://www.ugcoder.com/)<br />
+Contributor: [Maksudur Rahman Maateen](http://maateen.me/)<br />
 Tags: wordpress bangla tranlator, localized wordpress in bangla, bangla wordpress, wpbangla, bangla plugin<br />
 Requires at least: 2.2<br />
 Tested up to: 4.1.1<br />
